@@ -13,13 +13,12 @@ ATTR_COMPONENT = 'component'
 ATTR_COMPONENT_VERSION = 'component_version'
 ATTR_DESCRIPTION = 'description'
 ATTR_FIRSTBREWED = 'first brewed'
-ATTR_IMAGE = 'image'
 
 SCAN_INTERVAL = timedelta(seconds=120)
 
 ICON = 'mdi:beer'
 COMPONENT_NAME = 'brewdog'
-COMPONENT_VERSION = '0.0.1'
+COMPONENT_VERSION = '0.0.2'
 
 
 BASE_URL = 'https://api.punkapi.com/v2/beers/random'
@@ -46,6 +45,11 @@ class BrewDogSensor(Entity):
         return 'Random Brewdog'
 
     @property
+    def entity_picture(self):
+        """Return preview of current game."""
+        return self._image
+
+    @property
     def state(self):
         return self._state
 
@@ -61,6 +65,5 @@ class BrewDogSensor(Entity):
     def device_state_attributes(self):
         return {
             ATTR_FIRSTBREWED: self._firstbrewerd,
-            ATTR_DESCRIPTION: self._description,
-            ATTR_IMAGE: self._image
+            ATTR_DESCRIPTION: self._description
         }
