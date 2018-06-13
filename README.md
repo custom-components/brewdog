@@ -12,6 +12,6 @@ Example configuration.yaml:
 sensor:
   - platform: brewdog
 ```
-
+[Demo running in Home-Assistant](https://ha-test-brewdog.halfdecent.io/)
 ### Sample overview:
 ![Sample overview](overview.png)
