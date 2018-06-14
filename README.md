@@ -11,9 +11,10 @@ To get started put `/custom_components/sensor/brewdog.py` here:
 sensor:
   platform: brewdog
 ```
-**Configuration variables::**
-**platform: 
-(Required):**: 
+**Configuration variables::**  
+**platform**: null  
+**#**:   
+**Required:**:   
 #### Sample overview
 ![Sample overview](overview.png)
   
