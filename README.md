@@ -13,7 +13,6 @@ sensor:
 ```
 **Configuration variables::**  
 **platform (Required)**: null  
-**platform (Required)**: null  
 #### Sample overview
 ![Sample overview](overview.png)
   
