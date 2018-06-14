@@ -15,6 +15,7 @@ sensor:
 key | description  
 :---|:---  
 **platform (Required)** | The platform name.  
+|  
 #### Sample overview
 ![Sample overview](overview.png)
   
