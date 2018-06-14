@@ -13,7 +13,7 @@ sensor:
 ```
 **Configuration variables::**  
 key | description  
-:---|:---  
+:--- | :---  
 **platform (Required)** | The platform name.  
 |  
 #### Sample overview
