@@ -12,7 +12,7 @@ sensor:
   platform: brewdog
 ```
 **Configuration variables::**  
-**platform (Required)**: null  
+**platform (Required)** | The platform name.  
 #### Sample overview
 ![Sample overview](overview.png)
   
