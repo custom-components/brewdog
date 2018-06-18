@@ -22,7 +22,3 @@ key | description
 [Home-Assistant demo site.](https://ha-test-brewdog.halfdecent.io/)
   
   
-push_github:  stage: deploy
-  script:
-    - curl -sL https://gitlab.com/ludeeus/toolbox/raw/master/CI-Scripts/push_to_public_repo/init.sh | bash -s github pip-packages  /root
-    - curl -sL https://gitlab.com/ludeeus/toolbox/raw/master/CI-Scripts/push_to_public_repo/push.sh | bash -s Europe/Oslo
