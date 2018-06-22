@@ -8,6 +8,7 @@ To get started put `/custom_components/sensor/brewdog.py` here:
 **Example configuration.yaml:**
 ```yaml
 sensor:
+  platform: brewdog
 ```
 **Configuration variables:**  
   
