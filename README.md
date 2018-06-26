@@ -22,3 +22,5 @@ key | description
 [Home-Assistant demo site.](https://ha-test-brewdog.halfdecent.io/)
   
   
+  
+Due to how  are importerd, it is normal to see a  error on first boot after adding this, to resolve it, restart Home-Assistant.
