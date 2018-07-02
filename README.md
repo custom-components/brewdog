@@ -22,6 +22,8 @@ key | description
 #### Sample overview
 ![Sample overview](overview.png)
   
+[Home-Assistant demo site.](https://ha-test-brewdog.halfdecent.io/)
+  
   
   
 ***
