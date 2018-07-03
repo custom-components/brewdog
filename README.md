@@ -22,8 +22,6 @@ key | description
   
 [Home-Assistant demo site.](https://ha-test-brewdog.halfdecent.io/)
   
-[Discuss this on the home-assistant forum](null)
-  
   
   
 ***
