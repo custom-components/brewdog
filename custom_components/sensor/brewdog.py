@@ -3,11 +3,13 @@ A platform which allows you to get information about a random BreDog beer.
 For more details about this component, please refer to the documentation at
 https://gitlab.com/custom_components/brewdog
 """
-import requests
-import voluptuous as vol
 from datetime import timedelta
+
+import requests
+
 from homeassistant.helpers.entity import Entity
 
+__version__ = '0.0.2'
 
 ATTR_COMPONENT = 'component'
 ATTR_COMPONENT_VERSION = 'component_version'
@@ -17,9 +19,6 @@ ATTR_FIRSTBREWED = 'first brewed'
 SCAN_INTERVAL = timedelta(seconds=120)
 
 ICON = 'mdi:beer'
-COMPONENT_NAME = 'brewdog'
-COMPONENT_VERSION = '0.0.2'
-
 
 BASE_URL = 'https://api.punkapi.com/v2/beers/random'
 
@@ -29,8 +28,6 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
 class BrewDogSensor(Entity):
     def __init__(self):
         self._state = None
-        self._component = COMPONENT_NAME
-        self._componentversion = COMPONENT_VERSION
         self.update()
 
     def update(self):
