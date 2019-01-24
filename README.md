@@ -2,8 +2,8 @@
 
 A platform which allows you to get information about a random BrewDog beer.
   
-To get started put `/custom_components/sensor/brewdog.py` here:  
-`<config directory>/custom_components/sensor/brewdog.py`  
+To get started put `/custom_components/brewdog/sensor.py` here:  
+`<config directory>/custom_components/brewdog/sensor.py`  
   
 **Example configuration.yaml:**
 
