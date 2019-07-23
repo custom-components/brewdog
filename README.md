@@ -1,10 +1,10 @@
-# custom_component to get info about a random beer
+# Get info about a random beer
 
 A platform which allows you to get information about a random BrewDog beer.
-  
-To get started put `/custom_components/brewdog/sensor.py` here:  
-`<config directory>/custom_components/brewdog/sensor.py`  
-  
+
+To get started put all the files from`/custom_components/brewdog/` here:
+`<config directory>/custom_components/brewdog/`
+
 **Example configuration.yaml:**
 
 ```yaml
@@ -12,19 +12,16 @@ sensor:
   platform: brewdog
 ```
 
-**Configuration variables:**  
-  
-key | description  
-:--- | :---  
-**platform (Required)** | The platform name.  
-  
+**Configuration variables:**
+
+key | description
+:--- | :---
+**platform (Required)** | The platform name.
+
 ## Sample overview
 
 ![Sample overview](overview.png)
-  
-***
 
-Due to how `custom_components` are loaded, it is normal to see a `ModuleNotFoundError` error on first boot after adding this, to resolve it, restart Home-Assistant.
 
 ***
 
