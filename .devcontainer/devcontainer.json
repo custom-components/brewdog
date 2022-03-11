@@ -1,23 +1,34 @@
-// See https://aka.ms/vscode-remote/devcontainer.json for format details.
 {
-	"context": "..",
-	"dockerFile": "Dockerfile",
+	"image": "ghcr.io/ludeeus/devcontainer/integration:stable",
+	"postCreateCommand": "container install",
 	"appPort": "8124:8123",
-	"runArgs": [
-		"-e",
-		"GIT_EDTIOR='code --wait'"
-	],
 	"extensions": [
-		"ms-python.python"
-	],
-	"settings": {
-		"python.pythonPath": "/usr/local/bin/python",
+		"ms-python.python",
+		"github.vscode-pull-request-github",
+		"ryanluker.vscode-coverage-gutters",
+		"ms-python.vscode-pylance"
+	  ],
+	  "settings": {
+		"files.eol": "\n",
+		"editor.tabSize": 4,
+		"terminal.integrated.profiles.linux": {
+		  "zsh": {
+			"path": "/usr/bin/zsh"
+		  }
+		},
+		"terminal.integrated.defaultProfile.linux": "zsh",
+		"python.pythonPath": "/usr/local/python/bin/python",
+		"python.analysis.autoSearchPaths": false,
 		"python.linting.pylintEnabled": true,
 		"python.linting.enabled": true,
+		"python.linting.pylintArgs": [
+		  "--disable",
+		  "import-error"
+		],
 		"python.formatting.provider": "black",
 		"editor.formatOnPaste": false,
 		"editor.formatOnSave": true,
 		"editor.formatOnType": true,
 		"files.trimTrailingWhitespace": true
-	}
+	  }
 }

@@ -2,8 +2,7 @@
 
 A platform which allows you to get information about a random BrewDog beer.
 
-To get started put all the files from`/custom_components/brewdog/` here:
-`<config directory>/custom_components/brewdog/`
+Download with [HACS](https://hacs.xyz/docs/repositories/integration/custom_components_brewdog)
 
 **Example configuration.yaml:**
 
